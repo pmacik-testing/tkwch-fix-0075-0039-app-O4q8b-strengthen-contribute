@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dtet
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0-9-tenant/tkwch-fix-0075-0039-app/devfile-sample-dtet@sha256:63576450aa33b3c5b1d4887d3029ef3fbf1176fcbece7ef5095bbf405b525e73
+        name: my-nodejs
+        resources: {}
+status: {}
